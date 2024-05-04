@@ -1,0 +1,877 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500;600;700&family=Poppins:wght@500;600;700;800&family=Rufina:wght@400;700&family=Work+Sans:wght@400;500&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Work Sans", sans-serif;
+    overflow-x: hidden;
+  /* @@@@ later added postion remove if any prob occurs  */
+    
+    
+  }
+  
+
+body{
+    background: #304352;  
+    /* fallback for old browsers */
+
+/* background: -webkit-linear-gradient(to top, #d7d2cc, #304352); */
+  /* Chrome 10-25, Safari 5.1-6 */
+
+/* background: linear-gradient(to top, #d7d2cc, #304352); */
+ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+background: linear-gradient(#2b1055 , #7597de);
+
+min-height: 100vh;
+color: white;
+overflow-x: hidden;
+/* overflow-y: hidden; */
+
+}
+
+header{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 10px 30px;
+    width: 100%;
+    /* text-decoration: none; */
+    z-index: 10000;
+
+}
+
+header .logo{
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 2px;
+   text-decoration: none;
+   
+   }
+
+header a{
+    text-decoration: none;
+}
+
+header ul{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+    font-size: 2rem;    
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 6px 10px;
+
+}
+
+header ul li a:hover,
+header ul li a .active
+{
+    background-color: white;
+    color: black;
+    border-radius: 100px;
+    
+}
+
+.top-section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* To blur the image line at the end below to see change comment content = ' ' line */
+
+.top-section::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top , #1c0522 , transparent);
+    z-index: 1000;
+}
+
+.sec-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 7;
+}
+
+section img#moon{
+    mix-blend-mode: screen;
+}
+
+section img#mountains_front{
+    z-index: 12;
+}
+
+#text{
+    font-size: 7rem;
+    transform: translate(12px ,-25px );
+    /* transform: translateX(20px); */
+    z-index: 11;
+    position: absolute;
+
+}
+
+.game-section{
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+    /* background-color: #1c0522; */
+
+}
+
+.game-section h2{
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: white;
+
+}
+
+.game-section p{
+    font-size: 1.2em;
+    color: white;
+    
+}
+
+#btn{
+    background: white;
+    color: #2b1055;
+    padding: 8px 30px;
+    font-size: 1.6rem;
+    text-decoration: none;
+    border-radius: 40px;
+    margin-top: 9rem;
+    z-index: 1000  ;
+    /* font-weight: 100; */
+
+}
+
+
+/* @@@@@@@@@@@
+
+
+GAME LISTTT CSS
+
+@@@@@@@@@@@@@ */
+
+  
+
+  /* body {
+    overflow-x: hidden;
+  } */
+  
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Rufina", serif;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  h1 {
+    color: rgb(0 10 45);
+    font-size: 6rem;
+    font-weight: 600;
+  }
+  
+  p {
+    /* color: #777777; */
+    color: lightgray;
+    line-height: 1.6;
+    font-size: 2.8rem;
+    min-width: 100rem;
+    margin-bottom: 3rem;
+  
+    /* word-spacing: 0.1rem; */
+  }
+
+  
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+
+.section2 {
+    padding: 9rem 4.8rem;
+    
+  }
+
+  .section-portfolio {
+    /* background-color: rgb(249 249 255); */
+    /* background: linear-gradient(#2b1055 , #7597de); */
+    background: #1c0522;
+    transition: all 0.7s linear;
+    /* My extra */
+    padding: 9rem;
+    /* border-radius: 50px; */
+  }
+  
+  .section-portfolio  p {
+    max-width: 60rem;
+  }
+
+  .container {
+    max-width: 150rem;
+    /* min-width: 120rem; */
+    margin: 0 auto;
+  }
+
+  
+.common-heading {
+    font-size: 4.8rem;
+    font-weight: 600;
+    margin-bottom: 6rem;
+    text-transform: capitalize;
+    position: relative;
+  }
+
+  .common-heading::before {
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: #8490ff;;
+  }
+  
+  .common-heading::after {
+    content: "";
+    position: absolute;
+    top: 128%;
+    left: 1.5rem;
+    width: 30%;
+    height: 0.3rem;
+    background: #8490ff;;
+  }
+  
+
+  .grid {
+    display: grid;
+    /* gap: 9rem; */
+    gap : 10rem;
+  }
+
+  .grid-three-column {
+    grid-template-columns: repeat(3,1fr);
+   /* grid-template-columns: 1fr 1fr; */
+  }
+
+  .portfolio-images {
+    gap: 3.2rem;
+  }
+
+  
+.portfolio-images img {
+  width: 100%;
+  border-radius: 7px;
+  position: relative;
+  overflow: hidden;
+}
+  .img-overlay {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .img-overlay .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(
+      0deg,
+      rgb(132 144 255) 0%,
+      rgb(98 189 252) 100% 
+      );
+    opacity: 0;
+    color:  #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+    transition: all 0.3s linear;
+    border-radius: 7px;
+    /* box-shadow: inset 0 0 0 0.5rem var(--helper-tint); */
+  }
+  
+  .img-overlay:hover > .overlay{
+     
+    transform: translateY(0);
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .img-overlay .common-heading{
+  margin: 0;
+  color:  #fff;
+  text-decoration: none;
+  }
+
+
+  
+/* @@@@@@@@@@@
+
+
+GAME LISTTT CSS  END
+
+@@@@@@@@@@@@@ */
+
+
+
+/* ===========================================
+Footer Section
+======================================= */
+
+.section-footer {
+    background: black;
+  
+  }
+  
+  .f-credits p {
+    text-align: center;
+    color: #adadad;
+  }
+ 
+
+  .anchor-foot{
+    color: rgb(235, 225, 225);
+  }
+
+
+  /* @@@@@@@@@@@@@@@@@@@@@ */
+
+   .Note_app_img{
+    object-fit: fill;
+    height: 100%;
+  } 
+
+  .bubble_game_img{
+    object-fit: fill;
+    height: 100%;
+  } 
+
+  .project_6_img{
+    object-fit: fill;
+    height: 100%;
+  }
+
+  .project_4_img{
+    object-fit: fill;
+    height: 100%;
+  }
+
+
+  .chota_don{
+    display: block;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center; 
+    justify-items: center; 
+
+    margin: 0 2rem;
+
+  }
+  
+  .bada_don{
+     /* justify-content: center;
+    align-items: center;
+    justify-items: center; */
+    text-align: center; 
+    display: block;
+    margin-top: 1rem;
+
+    color: black;
+    
+  }
+
+
+  .dev_logo{
+    width: 10rem;
+    height: 10rem;
+    /* position: absolute; */
+
+    /* z-index: 10000000000000; */
+  }
+
+
+  /* @@@@@@ CSS ADEED FOR PROECT CONTAINERS @@@@@@ */
+
+
+  
+/*   
+  @media (max-width: 980px){
+  
+    html{
+      font-size: 50%;
+    }
+    
+
+  } */
+
+  /* @@@@@@@@@@@@@@@@@@@@@ */
+
+@media (max-width: 1500px){
+   
+
+  
+
+  .bada_don{
+    font-size: 4rem;
+ }
+
+ #text {
+  font-size: 6.8rem;
+  transform: translate(12px, -25px);
+  /* transform: translateX(20px); */
+  z-index: 11;
+  position: absolute;
+}
+}
+
+@media (max-width: 1400px){
+
+  .bada_don{
+    font-size: 3.5rem;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+ }
+ 
+ .chota_don{
+  font-size: 1.8rem;
+  margin: 0 2rem;
+
+}
+
+#text {
+  font-size: 6.2rem;
+  transform: translate(12px, -25px);
+  /* transform: translateX(20px); */
+  z-index: 11;
+  position: absolute;
+}
+
+}
+
+@media (max-width: 1300px){
+#text {
+  font-size: 5.7rem;
+  transform: translate(12px, -25px);
+  /* transform: translateX(20px); */
+  z-index: 11;
+  position: absolute;
+}
+}
+@media (max-width: 1200px){
+
+  .bada_don{
+    font-size: 2.4rem;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+ }
+ 
+ .chota_don{
+  font-size: 1.5rem;
+  margin: 0 2rem;
+
+}
+
+p {
+
+  font-size: 2.8rem;
+  min-width: 85rem;
+  /* max-width: 30rem; */
+  margin-bottom: 3rem;
+
+}
+
+#text {
+  font-size: 5.1rem;
+  transform: translate(12px, -25px);
+  /* transform: translateX(20px); */
+  z-index: 11;
+  position: absolute;
+}
+}
+
+@media (max-width: 1050px){
+
+  .bada_don{
+    font-size: 2rem;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+ }
+ 
+ .chota_don{
+  font-size: 1.3rem;
+  margin: 0 2rem;
+
+}
+
+
+#text {
+  font-size: 4.6rem;
+  transform: translate(3px, -25px);
+  /* transform: translateX(20px); */
+  z-index: 11;
+  position: absolute;
+}
+
+}
+
+@media (max-width: 980px){
+  html{
+    font-size: 50%;
+  }
+
+  .bada_don{
+    font-size: 2.8rem;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+ }
+ 
+ .chota_don{
+  font-size: 1.5rem;
+  margin: 0 2rem;
+
+}
+
+.grid {
+
+  gap : 3rem;
+}
+
+#text {
+  font-size: 4.5rem;
+  transform: translate(12px, -25px);
+  /* transform: translateX(20px); */
+  z-index: 11;
+  position: absolute;
+}
+
+}
+
+
+@media (max-width: 850px){
+
+  .bada_don{
+    font-size: 2.5rem;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+ }
+ 
+ .chota_don{
+  font-size: 1.5rem;
+  margin: 0 2rem;
+
+}
+.grid {
+
+  gap : 2rem;
+}
+
+#text {
+  font-size: 5rem;
+  transform: translate(3px, -25px);
+  /* transform: translateX(20px); */
+  z-index: 11;
+  position: absolute;
+}
+
+
+}
+/* @@@ For grid 2 @@@@ */
+@media (max-width: 790px){
+ 
+.section-hero .grid-two-column{
+  grid-template-columns: 1fr;
+}
+
+
+.section-biodata .grid-two-column{
+  grid-template-columns: 1fr;
+}
+
+
+
+.section-portfolio .grid-three-column{
+  grid-template-columns: repeat(2,1fr);
+}
+
+html{
+  font-size: 60%;
+}
+
+
+p {
+
+  font-size: 2.5rem;
+  min-width: 60rem;
+  
+  margin-bottom: 3rem;
+
+}
+
+.common-heading {
+  font-size: 4rem;
+  margin-bottom: 6rem;
+ 
+}
+
+#text {
+  font-size: 4.4rem;
+  transform: translate(3px, -25px);
+  /* transform: translateX(20px); */
+  z-index: 11;
+  position: absolute;
+}
+
+}
+
+
+@media (max-width: 660px){
+html{
+  font-size: 60%;
+}
+
+
+p {
+
+  font-size: 2rem;
+  min-width: 30rem;
+  
+  margin-bottom: 3rem;
+
+}
+
+#text {
+  font-size: 4rem;
+  transform: translate(3px, -25px);
+  /* transform: translateX(20px); */
+  z-index: 11;
+  position: absolute;
+}
+
+.dev_logo {
+  width: 8rem;
+  height: 8rem;
+
+}
+
+header ul li {
+  list-style: none;
+  margin-left: 5px;
+  font-size: 2rem;
+}
+
+
+}
+
+
+@media (max-width: 600px){
+
+  .bada_don{
+    font-size: 2.2rem;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+ }
+ 
+ .chota_don{
+  font-size: 1.5rem;
+  margin: 0 1rem;
+
+}
+
+.section-portfolio {
+  padding: 5rem;
+}
+
+p {
+
+  font-size: 2rem;
+  min-width: 30rem;
+  
+  margin-bottom: 3rem;
+
+}
+#text {
+  font-size: 4rem;
+  transform: translate(3px, -25px);
+  /* transform: translateX(20px); */
+  z-index: 11;
+  position: absolute;
+}
+
+
+.dev_logo {
+  width: 7rem;
+  height: 7rem;
+
+}
+
+header ul li {
+  list-style: none;
+  margin-left: 5px;
+  font-size: 1.6rem;
+}
+
+
+}
+
+@media (max-width: 500px){
+
+  .bada_don{
+    font-size: 2rem;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+ }
+ 
+ .chota_don{
+  font-size: 1.2rem;
+  margin: 0 1rem;
+
+}
+
+.section-portfolio {
+  padding: 4rem;
+}
+
+.grid {
+  gap : 2rem;
+}
+
+.common-heading {
+  font-size: 3rem;
+  margin-bottom: 6rem;
+ 
+}
+
+.dev_logo {
+  width: 6rem;
+  height: 6rem;
+
+}
+
+header ul li {
+  list-style: none;
+  margin-left: 0px;
+  font-size: 1.6rem;
+}
+
+
+
+}
+
+@media (max-width: 425px){
+
+  .bada_don{
+    font-size: 1.7rem;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+ }
+ 
+ .chota_don{
+  font-size: 1.1rem;
+  margin: 0 1rem;
+
+}
+.section-portfolio {
+ 
+  padding: 2rem;
+}
+
+.grid {
+
+  gap : 1rem;
+}
+
+.dev_logo {
+  width: 5rem;
+  height: 5rem;
+
+}
+
+header ul li {
+  list-style: none;
+  margin-left: -5px;
+  font-size: 1.4rem;
+}
+
+
+
+
+
+}
+
+
+@media (max-width: 360px){
+
+  .bada_don{
+    font-size: 1.5rem;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+ }
+ 
+ .chota_don{
+  font-size: 1rem;
+  margin: 0 1rem;
+
+}
+.section-portfolio {
+ 
+  padding: 2rem;
+}
+
+.grid {
+
+  gap : 0.8rem;
+}
+
+header ul li {
+display: none;
+}
+
+}
+
+
+/* @@@@@@@@@@ Animation  @@@@@@@  */
+
+marquee{
+  /* border : 2px solid #ccc; */
+  /* max-width : 250px ; */
+  text-align : center ;
+  /* padding : 10px ; */
+}
